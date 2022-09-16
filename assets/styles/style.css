@@ -23,6 +23,10 @@ body {
     color: white !important;
 }
 
+.brand-name {
+    font-size: 1.5rem;
+}
+
 .hero-title {
     font-size: 1.5rem;
 }
@@ -33,4 +37,16 @@ body {
 
 .btn {
     font-size: 1.6rem !important;
+}
+
+/* FOOTER */
+#footer {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-text{
+    font-size: 1.1rem;
 }
