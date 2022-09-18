@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css" />
     <title>Pesa Manager | Index Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header
-      class="header navbar navbar-dark bg-dark text-light py-4"
-      id="header"
-    >
+    <header class="header navbar navbar-light text-light pb-4" id="header">
       <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-      <span class="theme-mode"></span>
+      <span class="theme-mode">
+        <i class="fas fa-moon">@</i>
+      </span>
     </header>
-    <main class="main py-3" id="main">
-      <div class="jumbotron py-5 text-center">
+    <main class="main py-3 pb-5" id="main">
+      <!-- Hero Section -->
+      <div class="jumbotron pt-4 pb-3 text-center">
         <div
           class="container d-flex justify-content-center flex-column align-items-center"
         >
@@ -34,7 +34,379 @@
           </p>
         </div>
       </div>
-      <div class="btn-manager d-flex flex-column">
+
+      <!-- Sign Up / Sign In Section -->
+      <ul
+        class="nav nav-tabs justify-content-center mb-4"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="login-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#login"
+            type="button"
+            role="tab"
+            aria-controls="login"
+            aria-selected="true"
+          >
+            Login
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="signup-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#signup"
+            type="button"
+            role="tab"
+            aria-controls="signup"
+            aria-selected="false"
+          >
+            Create Account
+          </button>
+        </li>
+      </ul>
+
+      <div
+        class="tab-content d-flex justify-content-center align-items-center mt-2"
+        id="myTabContent"
+      >
+        <div
+          class="tab-pane fade show active"
+          id="login"
+          role="tabpanel"
+          aria-labelledby="login-tab"
+        >
+          <!-- Login Form -->
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email or username"
+              />
+            </div>
+            <div class="form-group my-2">
+              <label for="passowrd">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passowrd"
+                placeholder="Password"
+              />
+            </div>
+            <button type="submit" class="btnLogin btn btn-primary">
+              Login
+            </button>
+          </form>
+        </div>
+
+        <!-- Sign Up Tab -->
+        <div
+          class="tab-pane fade"
+          id="signup"
+          role="tabpanel"
+          aria-labelledby="signup-tab"
+        >
+          <!-- Registration Form -->
+          <form>
+            <div class="form-group my-2">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Enter username"
+              />
+            </div>
+            <div class="form-group my-2">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group my-2">
+              <label for="passowrd">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passowrd"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group my-2">
+              <label for="confirmPassowrd">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassowrd"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <button type="submit" class="btnRegister btn btn-primary">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <script src="assets/scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- 
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form> -->
+
+<!-- 
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link active"
+      id="pills-home-tab"
+      data-bs-toggle="pill"
+      data-bs-target="#pills-home"
+      type="button"
+      role="tab"
+      aria-controls="pills-home"
+      aria-selected="true"
+    >
+      Home
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="pills-profile-tab"
+      data-bs-toggle="pill"
+      data-bs-target="#pills-profile"
+      type="button"
+      role="tab"
+      aria-controls="pills-profile"
+      aria-selected="false"
+    >
+      Profile
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      id="pills-contact-tab"
+      data-bs-toggle="pill"
+      data-bs-target="#pills-contact"
+      type="button"
+      role="tab"
+      aria-controls="pills-contact"
+      aria-selected="false"
+    >
+      Contact
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div
+    class="tab-pane fade show active"
+    id="pills-home"
+    role="tabpanel"
+    aria-labelledby="pills-home-tab"
+  >
+    ...
+  </div>
+  <div
+    class="tab-pane fade"
+    id="pills-profile"
+    role="tabpanel"
+    aria-labelledby="pills-profile-tab"
+  >
+    ...
+  </div>
+  <div
+    class="tab-pane fade"
+    id="pills-contact"
+    role="tabpanel"
+    aria-labelledby="pills-contact-tab"
+  >
+    ...
+  </div>
+</div> -->
+<!-- 
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button
+      class="nav-link active"
+      id="nav-home-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#nav-home"
+      type="button"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+    >
+      Home
+    </button>
+    <button
+      class="nav-link"
+      id="nav-profile-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#nav-profile"
+      type="button"
+      role="tab"
+      aria-controls="nav-profile"
+      aria-selected="false"
+    >
+      Profile
+    </button>
+    <button
+      class="nav-link"
+      id="nav-contact-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#nav-contact"
+      type="button"
+      role="tab"
+      aria-controls="nav-contact"
+      aria-selected="false"
+    >
+      Contact
+    </button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div
+    class="tab-pane fade show active"
+    id="nav-home"
+    role="tabpanel"
+    aria-labelledby="nav-home-tab"
+  >
+    ...
+  </div>
+  <div
+    class="tab-pane fade"
+    id="nav-profile"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    ...
+  </div>
+  <div
+    class="tab-pane fade"
+    id="nav-contact"
+    role="tabpanel"
+    aria-labelledby="nav-contact-tab"
+  >
+    ...
+  </div>
+</div> -->
+
+<!-- <div class="btn-manager d-flex flex-column">
         <button class="btn btn-primary d-block mx-auto px-4 py-1 my-2">
           Sign Up
         </button>
@@ -43,8 +415,37 @@
         >
           Login
         </button>
-      </div>
-    </main>
-    <footer class="footer" id="footer"></footer>
-  </body>
-</html>
+      </div> -->
+
+<!-- <form>
+            <div class="align-items-center">
+              <div class="my-1">
+                <label class="sr-only" for="username">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inlineFormInputName"
+                  placeholder="Jane Doe"
+                />
+              </div>
+              <div class="my-1">
+                <label class="sr-only" for="inlineFormInputGroupUsername"
+                  >Username</label
+                >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroupUsername"
+                    placeholder="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form> -->
