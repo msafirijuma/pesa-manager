@@ -69,6 +69,10 @@ body {
     font-size: 1.35rem;
 }
 
+.container {
+    position: relative;
+}
+
 .btn {
     font-size: 1.6rem !important;
 }
