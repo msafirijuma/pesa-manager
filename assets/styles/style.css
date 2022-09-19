@@ -57,8 +57,30 @@ body {
     padding-inline: 0.5rem;
 }
 
-.brand-name {
+.navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 400;
+}
+
+.brand-name,
+.theme-mode{
     font-size: 2rem !important;
+}
+
+.nav-menu {
+    display: none !important;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bs-white);
+}
+
+.nav-menu.active {
+    display: flex !important;
+    visibility: visible;
+    height: 15vh;
 }
 
 .hero-title {
@@ -109,7 +131,7 @@ button.active:focus {
 }
 
 form {
-    box-shadow: 1px 1px 4px aliceblue, -2px -2px 4px aliceblue !important;
+    box-shadow: 2px 2px 4px aliceblue, -2px -2px 4px aliceblue !important;
     padding: 12px;
 }
 
@@ -134,8 +156,8 @@ form {
     font-size: 2.5rem !important;
 }
 
-.main .pb-5 {
-    padding: 6rem !important;
+.main {
+    padding-bottom: 6rem !important;
 }
 
 .userSelection {
@@ -165,6 +187,11 @@ form {
     font-size: 1.1rem;
 }
 
+/* DARK MODE */
+.navbar-scroll {
+    background-color: var(--bs-white);
+    color: var(--bs-dark) !important;
+}
 
 /* MEDIA QUERIES */
 
