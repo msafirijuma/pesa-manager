@@ -91,6 +91,10 @@ button.active {
     color: var(--bs-light) !important;
 }
 
+button.active:focus {
+    outline-color: transparent !important;
+}
+
 #myTabContent {
     width: 100% !important;
 }
@@ -130,6 +134,10 @@ form {
     font-size: 2.5rem !important;
 }
 
+.main .pb-5 {
+    padding: 6rem !important;
+}
+
 .userSelection {
     display: flex;
     justify-content: center;
@@ -139,6 +147,12 @@ form {
     width: 80% !important;
     font-size: 1.3rem !important;
 }
+
+.type-title {
+    font-size: 1.5rem;
+}
+
+
 /* FOOTER */
 #footer {
     background-color: black;
@@ -149,4 +163,13 @@ form {
 
 .footer-text{
     font-size: 1.1rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+    .hero-text {
+        text-align: left !important;
+    }
 }

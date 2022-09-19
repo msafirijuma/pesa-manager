@@ -23,7 +23,7 @@
     </header>
     <main class="main py-3 pb-5" id="main">
       <!-- Hero Section -->
-      <div class="jumbotron pt-4 pb-3 text-center">
+      <div class="jumbotron pt-4 pb-3 text-center text-md-start">
         <div
           class="container d-flex justify-content-center flex-column align-items-center"
         >
@@ -162,7 +162,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer fw-bold py-3 text-center" id="footer">
+      <h6 class="footer-text">
+        Developed by Msafiri | All right reserved @
+        <script>
+          let date = new Date();
+          document.write(date.getFullYear());
+        </script>
+      </h6>
+    </footer>
     <script src="assets/scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
