@@ -109,6 +109,36 @@ form {
     padding: 12px;
 }
 
+.btnAddNewExpense,
+.btnAddNewRevenue {
+    display: flex !important;
+    justify-content: center !important;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 0.375rem !important;
+    border-radius: 50% !important;
+    z-index: 100;
+    background: var(--bs-primary) !important;
+    width: 75px;
+    height: 75px;
+
+}
+
+.btnAddNewExpense .btnCategory,
+.btnAddNewRevenue .btnCategory {
+    font-size: 2.5rem !important;
+}
+
+.userSelection {
+    display: flex;
+    justify-content: center;
+}
+
+.form-select {
+    width: 80% !important;
+    font-size: 1.3rem !important;
+}
 /* FOOTER */
 #footer {
     background-color: black;
