@@ -215,3 +215,33 @@ form {
         text-align: left !important;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    .nav-menu {
+        display: flex !important;
+        position: inherit;
+        width: auto;
+        height: unset;
+        visibility: visible;
+        background-color: transparent;
+        flex-direction: row !important;
+        color: var(--bs-white) !important;
+        margin-top: 10px;
+    }
+
+    .nav-menu .nav-group {
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .nav-menu .nav-link {
+        padding: 1.2rem 1rem;
+        color: var(--bs-light);
+        font-size: 2rem;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+}
