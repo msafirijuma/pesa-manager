@@ -11,9 +11,26 @@
   <body>
     <header class="header navbar navbar-light px-2 py-3" id="header">
       <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
-      <span class="theme-mode">
-        <i class="fas fa-moon">@</i>
-      </span>
+      <nav class="nav-menu">
+        <ul class="nav-group">
+          <li class="nav-item">
+            <a href="expenditures.html" class="nav-link">Expenditure</a>
+          </li>
+          <li class="nav-item">
+            <a href="revenues.html" class="nav-link">Revenue</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="theme-mode">
+                <i class="fas fa-moon">&bemptyv;</i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fas fa-hamburger">=</i>
+      </div>
     </header>
     <main class="main py-3" id="main">
       <div class="py-5 text-center">
@@ -23,11 +40,71 @@
           <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
           <p class="type-title">Your Revenue</p>
           <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#openRevenueModal"
             class="btnAddNewRevenue btn text-light"
-            title="Add new Income"
+            title="Add New Revenue"
           >
-            <span class="btnCategory">&plus;</span>
+            <span class="btnCategory"> &plus; </span>
           </button>
+        </div>
+      </div>
+      <!-- Revenue Modal -->
+      <div class="modal fade" id="openRevenueModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Add New Revenue</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="item">Item</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="revenueItem"
+                    placeholder="Enter an item"
+                  />
+                </div>
+                <div class="form-group my-2">
+                  <label for="revenueAmount">Amount</label>
+                  <input
+                    inputmode="numeric"
+                    class="form-control"
+                    id="revenueAmount"
+                    placeholder="Income Amount"
+                  />
+                </div>
+                <div class="form-group my-2">
+                  <label for="description">Description</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="description"
+                    placeholder="Describe your expense"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Add</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -40,5 +117,8 @@
         </script>
       </h6>
     </footer>
+    <script src="assets/scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/hamburger.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>

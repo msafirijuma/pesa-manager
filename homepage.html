@@ -8,40 +8,62 @@
     <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css" />
     <title>Pesa Manager</title>
   </head>
-  <header class="header navbar navbar-light px-2 py-3" id="header">
+  <body>
+    <header class="header navbar navbar-light px-2 py-3" id="header">
       <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
-      <span class="theme-mode">
-        <i class="fas fa-moon">@</i>
-      </span>
-  </header>
-  <main class="main py-3" id="main">
-    <div class="jumbotron py-5 text-center">
-      <div
-        class="container d-flex justify-content-center flex-column align-items-center"
-      >
-        <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
-        <p class="hero-text">
-          Track all your revenue and expenditure on the fly with our stunning
-          app to boost your productivity and management.
-        </p>
+      <nav class="nav-menu">
+        <ul class="nav-group">
+          <li class="nav-item">
+            <a href="expenditures.html" class="nav-link">Expenditure</a>
+          </li>
+          <li class="nav-item">
+            <a href="revenues.html" class="nav-link">Revenue</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="theme-mode">
+                <i class="fas fa-moon">&bemptyv;</i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fas fa-hamburger">=</i>
       </div>
-      <div class="userSelection">
-        <select class="form-select" name="userSelection" id="userSelection">
-          <option value="" disabled>What to add</option>
-          <option value="expense">Expense</option>
-          <option value="revenue">Revenue</option>
-        </select>
+    </header>
+    <main class="main py-3" id="main">
+      <div class="jumbotron py-5 text-center">
+        <div
+          class="container d-flex justify-content-center flex-column align-items-center"
+        >
+          <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
+          <p class="hero-text">
+            Track all your revenue and expenditure on the fly with our stunning
+            app to boost your productivity and management.
+          </p>
+        </div>
+        <div class="userSelection">
+          <select class="form-select" name="userSelection" id="userSelection">
+            <option value="" disabled>What to add</option>
+            <option value="expense">Expense</option>
+            <option value="revenue">Revenue</option>
+          </select>
+        </div>
       </div>
-    </div>
-    </div>
-  </main>
-  <footer class="footer fw-bold py-3 text-center" id="footer">
-      <h6 class="footer-text">
-        Developed by Msafiri | All right reserved @
-        <script>
-          let date = new Date();
-          document.write(date.getFullYear());
-        </script>
-      </h6>
+      </div>
+    </main>
+    <footer class="footer fw-bold py-3 text-center" id="footer">
+        <h6 class="footer-text">
+          Developed by Msafiri | All right reserved @
+          <script>
+            let date = new Date();
+            document.write(date.getFullYear());
+          </script>
+        </h6>
     </footer>
+    <script src="assets/scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/scripts/hamburger.js"></script>
+    <script src="assets/scripts/app.js"></script>
+  </body>
 </html>
