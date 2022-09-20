@@ -55,7 +55,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding-inline: 0.5rem;
 }
 
@@ -63,6 +63,7 @@ body {
     position: sticky !important;
     top: 0 !important;
     z-index: 400;
+    align-items: baseline !important;
 }
 
 .brand-name,
@@ -97,7 +98,7 @@ body {
 .nav-menu.active {
     display: flex !important;
     visibility: visible;
-    height: 20vh;
+    height: 28vh;
 }
 
 /* Hero Section */
@@ -197,6 +198,12 @@ form {
 
 .form-control {
     font-size: 1.2rem !important;
+    border-color: #17201e !important;
+}
+
+.modal-title {
+    color: var(--bs-dark) !important;
+    font-size: 1.5rem;
 }
 
 .form-label {
@@ -211,14 +218,15 @@ form {
 
 /* FOOTER */
 #footer {
-    background-color: black;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
     width: 100%;
     position: fixed;
     bottom: 0;
 }
 
 .footer-text{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 /* DARK MODE */
