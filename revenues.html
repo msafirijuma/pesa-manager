@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Pesa Manager | Revenue</title>
   </head>
   <body>
@@ -14,35 +20,35 @@
       <nav class="nav-menu">
         <ul class="nav-group">
           <li class="nav-item">
-            <a href="homepage.html" class="nav-link">Home & Balance</a>
+            <a href="homepage.html" class="nav-link">Home &amp; Balance</a>
           </li>
           <li class="nav-item">
-            <a href="expenditures.html" class="nav-link">Expenditure</a>
+            <a href="expenditures.html" class="nav-link">Expenditures</a>
           </li>
           <li class="nav-item">
-            <a href="revenues.html" class="nav-link">Revenue</a>
+            <a href="revenues.html" class="nav-link">Revenues</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <span class="theme-mode">
-                <i class="fas fa-moon">&bemptyv;</i>
+                <i class="fas fa-moon"></i>
               </span>
             </a>
           </li>
         </ul>
       </nav>
       <div class="hamburger">
-        <i class="fas fa-hamburger">=</i>
+        <i class="fas fa-hamburger"></i>
         <span class="text-menu">Menu</span>
       </div>
     </header>
-    <main class="main py-3" id="main">
-      <div class="py-5 text-center">
+    <main class="main py-1" id="main">
+      <div class="py-4 text-center">
         <div
           class="container d-flex justify-content-center flex-column align-items-center"
         >
           <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
-          <p class="type-title">Your Revenue</p>
+          <p class="type-title">Your Revenues</p>
           <button
             type="button"
             data-bs-toggle="modal"
@@ -54,7 +60,8 @@
           </button>
         </div>
       </div>
-      <!-- Revenue Modal -->
+
+      <!-- Expense Modal -->
       <div class="modal fade" id="openRevenueModal">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
@@ -74,7 +81,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="revenueItem"
+                    id="item"
                     placeholder="Enter an item"
                   />
                 </div>
@@ -84,7 +91,7 @@
                     inputmode="numeric"
                     class="form-control"
                     id="revenueAmount"
-                    placeholder="Income Amount"
+                    placeholder="Amount Spent"
                   />
                 </div>
                 <div class="form-group my-2">
@@ -95,7 +102,7 @@
                     type="text"
                     class="form-control"
                     id="description"
-                    placeholder="Describe your expense"
+                    placeholder="Describe your revenue"
                   />
                 </div>
               </form>
