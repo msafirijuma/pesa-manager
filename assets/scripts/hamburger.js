@@ -4,7 +4,9 @@ const navbarMenu = document.querySelector(".nav-menu")
 hamburger.addEventListener("click", () => {
     if (!(navbarMenu.classList.contains("active"))) {
         navbarMenu.classList.add("active");
+        hamburger.innerHTML = "x"
     } else {
         navbarMenu.classList.remove("active");
+        hamburger.innerHTML = "= Menu"
     }
 })
