@@ -39,7 +39,6 @@
       </nav>
       <div class="hamburger">
         <i class="fas fa-hamburger" id="hamburgerIcon"></i>
-        <span class="text-menu">Menu</span>
       </div>
     </header>
     <main class="main py-3" id="main">
@@ -61,10 +60,44 @@
           </select>
         </div>
       </div>
-      <div class="container d-flex justify-content-center flex-column align-items-center">
+      <div class="container d-flex justify-content-center flex-column align-items-center mt-3">
         <h3 class="title-balance text-center">BALANCE</h3>
-
-        <p class="balance my-2">Balance: 0</p>
+        <button 
+        class="btn text-white btn-outline-light mt-1"
+        data-bs-toggle="modal"
+        data-bs-target="#openViewBalanceModal"
+        >View Details</button>
+        <!-- View Balance Modal -->
+        <div class="modal fade" id="openViewBalanceModal">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel"> Details</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <h2 class="details-type">Total Expense: 0</h2>
+                  <h2 class="details-type">Total Expense: 0</h2>
+                  <h2 class="details-type">Total Expense: 0</h2>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
       </div>
       </div>
     </main>

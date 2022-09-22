@@ -222,7 +222,14 @@ form {
     font-size: 1.25rem !important;
 }
 
+.modal-body .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
 
+.details-type {
+    color: var(--bs-dark) !important;
+}
 /* FOOTER */
 #footer {
     background-color: var(--bs-white);
