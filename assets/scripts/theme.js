@@ -1,12 +1,12 @@
 const themeToggler = document.querySelector("#themeToggler");
 const themeIcon = document.querySelector("#themeIcon");
 const footer = document.querySelector(".footer");
-const header = document.querySelector(".header");
+const headerDark = document.querySelector(".header");
 let darkMode = localStorage.getItem("dark-mode");
 
 const headerDarkMode = () => {
-    if (header.classList.contains("header")) {
-        header.classList.add("header-dark")
+    if (headerDark.classList.contains("header")) {
+        headerDark.classList.add("header-dark")
     }
 }
 
@@ -17,8 +17,8 @@ const footerDarkMode = () => {
 }
 
 const headerLightMode = () => {
-    if (header.classList.contains("header-dark")) {
-        header.classList.remove("header-dark")
+    if (headerDark.classList.contains("header-dark")) {
+        headerDark.classList.remove("header-dark")
     }
 }
 

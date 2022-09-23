@@ -335,7 +335,7 @@ body {
 }
 
 .header-dark {
-    background-color: var(--bs-dark);
+    background-color: var(--bs-dark) !important;
 }
 
 .footer-dark {
