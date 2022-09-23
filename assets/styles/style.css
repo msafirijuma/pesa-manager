@@ -89,10 +89,11 @@ body {
 
 .nav-menu .nav-group {
     padding: 0 !important;
+    background-color: transparent !important;
 }
 
 .nav-menu .nav-link {
-    color: var(--bs-dark);
+    color: #111;
     background-color: transparent !important;
     font-size: 1.4rem;
     font-weight: 400 !important;
@@ -101,8 +102,8 @@ body {
 .nav-tabs .nav-link {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-    background: var(--bs-light);
-    color: #000;
+    background: var(--bs-light) !important;
+    color: #000 !important;
 }
 
 .nav-menu.active {
@@ -146,12 +147,12 @@ body {
     font-weight: 100 !important;
 }
 
-button.active {
+.nav-link.active {
     background-color: var(--bs-blue) !important;
     color: var(--bs-light) !important;
 }
 
-button.active:focus {
+.nav-link.active:focus {
     outline-color: transparent !important;
 }
 
@@ -167,7 +168,6 @@ button.active:focus {
 .btnRegister {
     width: 100%;
 }
-
 
 /* Form */
 form {
@@ -247,8 +247,6 @@ form {
     font-size: 1.1rem;
     margin-top: 12px;
 }
-
-
 
 
 /* FOOTER */
