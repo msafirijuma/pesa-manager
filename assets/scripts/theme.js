@@ -54,5 +54,6 @@ themeToggler.addEventListener("click", () => {
     } else {
         toggleLightMode();
     }
+    location.reload()
 })
 
