@@ -15,7 +15,8 @@
     <title>Pesa Manager | Home & Balance</title>
   </head>
   <body>
-    <header class="header navbar navbar-light px-2 py-md-0" id="header">
+    <div class="bg-img-wrapper">
+        <header class="header navbar navbar-light px-2 py-md-0" id="header">
       <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
       <nav class="nav-menu">
         <ul class="nav-group">
@@ -54,7 +55,7 @@
         </div>
         <div class="selection">
           <select class="form-select" name="userSelection" id="userTypeSelection">
-            <option value="-1" disabled selected>What to add</option>
+            <option value="-1" selected>What to add</option>
             <option value="expense">Expense</option>
             <option value="revenue">Revenue</option>
           </select>
@@ -82,9 +83,9 @@
               </div>
               <div class="modal-body">
                 <div class="container">
-                  <h2 class="details-type">Total Expense: 0</h2>
-                  <h2 class="details-type">Total Revenue: 0</h2>
-                  <h2 class="details-type">Balance: 0</h2>
+                  <h2 class="details-type">Total Expense: <span class="expense-alert">0</span>></h2>
+                  <h2 class="details-type">Total Revenue: <span class="expense-alert">0</span>></h2>
+                  <h2 class="details-type">Balance: <span class="balance-alert">0</span>></h2>
                 </div>
                 <div class="container">
                   <p class="balance-meaning">Balance is the difference between the total revenue and the total expense.</p>
@@ -104,6 +105,7 @@
       </div>
       </div>
     </main>
+    </div>
     <footer class="footer fw-bold text-center" id="footer">
         <h6 class="footer-text  py-3">
           Developed by Msafiri @

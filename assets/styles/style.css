@@ -40,6 +40,11 @@ html {
 body {
     position: relative;
     font-size: 18px;
+    color: white !important;
+}
+
+/* Bg Image */
+.bg-img-wrapper {
     background-image: url(../images/money-black-wallpaper.webp);
     background-position: center;
     background-size: cover;
@@ -47,9 +52,7 @@ body {
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    color: white !important;
 }
-
 
 /* Header */
 .header {
@@ -254,8 +257,6 @@ form {
     background-color: var(--bs-white);
     color: var(--bs-dark);
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer-text{
@@ -273,6 +274,17 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline !important;
+        justify-content: space-between !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
     .nav-menu {
         display: flex !important;
         position: inherit;
@@ -284,19 +296,10 @@ form {
         color: var(--bs-white) !important;
     }
 
-    .navbar {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center !important;
-        justify-content: center !important;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-
     .nav-menu .nav-group {
         padding: 0 !important;
         display: flex;
+        margin-bottom: 0.5rem !important;
     }
 
     .nav-menu .nav-link {
@@ -326,10 +329,6 @@ form {
 .navbar-scroll {
     background-color: var(--bs-white);
     color: var(--bs-dark) !important;
-}
-
-body {
-    background-image: url(../images/money-black-wallpaper.webp);
 }
 
 .header-dark {

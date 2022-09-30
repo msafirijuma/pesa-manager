@@ -15,172 +15,174 @@
     />
   </head>
   <body>
-    <header class="header navbar navbar-light px-2 py-md-0" id="header">
-      <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
-      <nav class="nav-menu">
-        <ul class="nav-group">
-          <li class="nav-item">
-            <a href="expenditures.html" class="nav-link">Expenditures</a>
-          </li>
-          <li class="nav-item">
-            <a href="revenues.html" class="nav-link">Revenues</a>
-          </li>
-          <li class="nav-item" id="themeToggler">
-            <a href="#" class="nav-link">
-              <span class="theme-mode">
-                <i class="fas fa-moon" id="themeIcon"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <i class="fas fa-hamburger" id="hamburgerIcon"></i>
-      </div>
-    </header>
-    <main class="main" id="main">
-      <!-- Hero Section -->
-      <div class="jumbotron pt-4 pb-3 text-center text-md-start">
-        <div
-          class="container d-flex justify-content-center flex-column align-items-center"
-        >
-          <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
-          <p class="hero-text">
-            Track all your revenues and expenditures on the fly with our
-            stunning app to boost your productivity and management.
-          </p>
+    <div class="bg-img-wrapper">
+      <header class="header navbar navbar-light px-2 py-md-0" id="header">
+        <h1 class="brand-name display-6 ps-2">Pesa Manager</h1>
+        <nav class="nav-menu">
+          <ul class="nav-group">
+            <li class="nav-item">
+              <a href="expenditures.html" class="nav-link">Expenditures</a>
+            </li>
+            <li class="nav-item">
+              <a href="revenues.html" class="nav-link">Revenues</a>
+            </li>
+            <li class="nav-item" id="themeToggler">
+              <a href="#" class="nav-link">
+                <span class="theme-mode">
+                  <i class="fas fa-moon" id="themeIcon"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <i class="fas fa-hamburger" id="hamburgerIcon"></i>
         </div>
-      </div>
-
-      <!-- Sign Up / Sign In Section -->
-      <ul
-        class="nav nav-tabs justify-content-center mb-4"
-        id="myTab"
-        role="tablist"
-      >
-        <li class="nav-item" role="presentation">
-          <button
-            type="button"
-            class="nav-link active"
-            id="login-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#login"
-            role="tab"
-            aria-controls="login"
-            aria-selected="true"
+      </header>
+      <main class="main" id="main">
+        <!-- Hero Section -->
+        <div class="jumbotron pt-4 pb-3 text-center text-md-start">
+          <div
+            class="container d-flex justify-content-center flex-column align-items-center"
           >
-            Login
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            type="button"
-            class="nav-link"
-            id="signup-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#signup"
-            role="tab"
-            aria-controls="signup"
-            aria-selected="false"
-          >
-            Create Account
-          </button>
-        </li>
-      </ul>
+            <h2 class="hero-title">WELCOME TO PESA MANAGER</h2>
+            <p class="hero-text">
+              Track all your revenues and expenditures on the fly with our
+              stunning app to boost your productivity and management.
+            </p>
+          </div>
+        </div>
 
-      <div
-        class="tab-content d-flex justify-content-center align-items-center mt-2"
-        id="myTabContent"
-      >
-        <div
-          class="tab-pane fade show active"
-          id="login"
-          role="tabpanel"
-          aria-labelledby="login-tab"
+        <!-- Sign Up / Sign In Section -->
+        <ul
+          class="nav nav-tabs justify-content-center mb-4"
+          id="myTab"
+          role="tablist"
         >
-          <!-- Login Form -->
-          <form>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="emailLogin"
-                aria-describedby="emailHelp"
-                placeholder="Enter email or username"
-              />
-            </div>
-            <div class="form-group my-2">
-              <label for="passowrd">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="passowrdLogin"
-                placeholder="Password"
-              />
-            </div>
-            <button type="submit" class="btnLogin btn btn-primary">
+          <li class="nav-item" role="presentation">
+            <button
+              type="button"
+              class="nav-link active"
+              id="login-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#login"
+              role="tab"
+              aria-controls="login"
+              aria-selected="true"
+            >
               Login
             </button>
-          </form>
-        </div>
-
-        <!-- Sign Up Tab -->
-        <div
-          class="tab-pane fade"
-          id="signup"
-          role="tabpanel"
-          aria-labelledby="signup-tab"
-        >
-          <!-- Registration Form -->
-          <form>
-            <div class="form-group my-2">
-              <label for="username">Username</label>
-              <input
-                type="text"
-                class="form-control"
-                id="username"
-                placeholder="Enter username"
-              />
-            </div>
-            <div class="form-group my-2">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Enter email"
-              />
-            </div>
-            <div class="form-group my-2">
-              <label for="passowrd">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="passowrd"
-                placeholder="Password"
-              />
-            </div>
-            <div class="form-group my-2">
-              <label for="confirmPassowrd">Confirm Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="confirmPassowrd"
-                placeholder="Confirm Password"
-              />
-            </div>
-            <button type="submit" class="btnRegister btn btn-primary">
-              Sign Up
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              type="button"
+              class="nav-link"
+              id="signup-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#signup"
+              role="tab"
+              aria-controls="signup"
+              aria-selected="false"
+            >
+              Create Account
             </button>
-          </form>
+          </li>
+        </ul>
+
+        <div
+          class="tab-content d-flex justify-content-center align-items-center mt-2"
+          id="myTabContent"
+        >
+          <div
+            class="tab-pane fade show active"
+            id="login"
+            role="tabpanel"
+            aria-labelledby="login-tab"
+          >
+            <!-- Login Form -->
+            <form>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailLogin"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email or username"
+                />
+              </div>
+              <div class="form-group my-2">
+                <label for="passowrd">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passowrdLogin"
+                  placeholder="Password"
+                />
+              </div>
+              <button type="submit" class="btnLogin btn btn-primary">
+                Login
+              </button>
+            </form>
+          </div>
+
+          <!-- Sign Up Tab -->
+          <div
+            class="tab-pane fade"
+            id="signup"
+            role="tabpanel"
+            aria-labelledby="signup-tab"
+          >
+            <!-- Registration Form -->
+            <form>
+              <div class="form-group my-2">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="Enter username"
+                />
+              </div>
+              <div class="form-group my-2">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group my-2">
+                <label for="passowrd">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passowrd"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group my-2">
+                <label for="confirmPassowrd">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassowrd"
+                  placeholder="Confirm Password"
+                />
+              </div>
+              <button type="submit" class="btnRegister btn btn-primary">
+                Sign Up
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <!-- Footer -->
     <footer class="footer fw-bold text-center" id="footer">
-      <h6 class="footer-text  py-3">
+      <h6 class="footer-text py-3">
         Developed by Msafiri @
         <script>
           let date = new Date();
