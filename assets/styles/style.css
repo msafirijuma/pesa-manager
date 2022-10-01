@@ -335,6 +335,11 @@ form {
     background-color: var(--bs-dark) !important;
 }
 
+.navbar-scroll-dark-mode {
+    background-color: var(--bs-light) !important;
+    color: var(--bs-dark) !important;
+}
+
 .footer-dark {
     background-color: var(--bs-dark) !important;
     color: var(--bs-white) !important;
