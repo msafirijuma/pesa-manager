@@ -243,6 +243,12 @@ form {
     color: var(--bs-success);
 }
 
+.balance-alert {
+    background-color: green;
+    padding-inline: 35px;
+    padding-block: 2px;
+}
+
 .balance {
     font-size: 1.25rem !important;
 }
