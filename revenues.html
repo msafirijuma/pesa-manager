@@ -54,6 +54,7 @@
             <p class="type-title">Your Revenues</p>
             <!-- Sort By -->
             <select name="" id="" class="form-select">
+              <option value="all">Sort Revenues By</option>
               <option value="all">All</option>
               <option value="today">Today</option>
               <option value="yesterday">Yesterday</option>
@@ -63,6 +64,23 @@
               <option value="month6">6 Month</option>
               <option value="year1">Annually</option>
             </select>
+
+            <!-- Print and Download Report -->
+            <div class="my-3">
+              <button
+                onclick="window.print()"
+                title="Print Revenues Report"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-print"></i>
+                <span class="summary-report">Print Report</span>
+              </button>
+              <button title="Download Revenues Report" class="btn btn-light">
+                <i class="fas fa-download"></i>
+                <span class="summary-report">Download Report</span>
+              </button>
+            </div>
+
             <button
               type="button"
               data-bs-toggle="modal"

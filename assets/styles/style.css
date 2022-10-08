@@ -114,7 +114,7 @@ body {
 .nav-menu.active {
     display: flex !important;
     visibility: visible;
-    height: 28vh;
+    height: 30vh;
 }
 
 #themeIcon {
@@ -200,6 +200,10 @@ form {
 .btnAddNewExpense .btnCategory,
 .btnAddNewRevenue .btnCategory {
     font-size: 1.8rem !important;
+}
+
+.summary-report {
+    display: none;
 }
 
 .main {
